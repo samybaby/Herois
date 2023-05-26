@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 22, 2);
+    text-align: center;
+}
+#container{
+    position: relative;
+    margin-bottom: 10px;
+    height: 300px;
+}
+#homem-aranha{
+    position: absolute;
+    width: 70px;
+    height: 103px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#homem-aranha::before{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 1000px;
+    left: 50%;
+    bottom: 100%;
+    margin-bottom: -18px;
+    margin-left: -1px;
+    border: 1px solid wheat;
+}
+#homem-aranha .cabeca{
+    border-radius: 15px 15px 10px 10px;
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -14px;
+    background: #cc2c3a;
+    border: solid 1px #1b405f;
+}
+#homem-aranha .cabeca::before{
+    content: " ";
+    position: absolute;
+    height: 4px;
+    width: 8px;
+    top: -6px;
+    left: 50%;
+    margin-left: -5px;
+    background: #cc2c3a;
+    border: 1px solid #1b405f;
+}
+#homem-aranha .cabeca .olho-esquerdo,
+#homem-aranha .cabeca .olho-direito{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50;
+    position: absolute;
+    width: 9px;
+    height: 2px;
+    bottom: 9px;
+    background: white;
+    border: solid 1px #1b405f;
+}
+#homem-aranha .cabeca .olho-esquerdo{
+    left: 3px;
+}
+#homem-aranha .cabeca .olho-direito{
+    right: 3px;
+}
+#homem-aranha .corpo{
+    position: absolute;
+    width: 32px;
+    height: 34px;
+    top: 34px;
+    left: 50%;
+    margin-left: -16px;
+    background: #336687;
+    border: solid 1px #1b405f;
+}
+#homem-aranha .corpo::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    right: 4px;
+    bottom: 0;
+    background: #cc2c3a;
+}
+#homem-aranha .corpo::after{
+    content: " ";
+    position: absolute;
+    width: 36px;
+    height: 6px;
+    top: -7px;
+    left: 50%;
+    margin-left: -19px;
+    background: #cc2c3a;
+    border: solid 1px #1b405f;
+}
+#homem-aranha .corpo .aranha{
+    border-radius: 50%;
+    position: absolute;
+    width: 4px;
+    height: 10px;
+    left: 50%;
+    bottom: 5px;
+    margin-left: -2px;
+    background: #1b405f;
+}
+#homem-aranha .corpo .aranha::before,
+#homem-aranha .corpo .aranha::after{
+    border-radius: 50%;
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 12px;
+    left: 50%;
+    margin-left: -6px;
+    border-style: double;
+    border-width: 1px;
+}
+#homem-aranha .corpo .aranha::before{
+    top: 50px;
+    border-color: #1b405f transparent transparent transparent;
+
+}
+#homem-aranha .corpo .aranha::after{
+    bottom: 50%;
+    border-color: transparent transparent #1b405f transparent;
+}
